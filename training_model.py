@@ -104,13 +104,14 @@ callbacks = [
 # 6. Training
 history = model.fit(
     X_train, y_train,
-    epochs=100,
-    batch_size=32,
+    epochs=18,
+    batch_size=500,
     validation_data=(X_test, y_test),
     callbacks=callbacks,
     verbose=1
 )
 
 print("\nTraining complete. Best model saved as 'best_model.h5'.")
+
 
 
